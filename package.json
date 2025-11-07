@@ -1,0 +1,39 @@
+{
+    "name": "log-timed",
+    "version": "1.0.0",
+    "description": "Lightweight logging with timestamps, colors and file support",
+    "keywords": [
+        "log",
+        "logger",
+        "logging",
+        "timestamp",
+        "chalk",
+        "console",
+        "colors",
+        "file"
+    ],
+    "license": "ISC",
+    "author": "tish",
+    "type": "module",
+    "main": "dist/logger.js",
+    "types": "dist/logger.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "npx tsc --watch",
+        "build": "npx tsc --build",
+        "test": "node test/test.js",
+        "build:test": "npm run build && npm run test"
+    },
+    "devDependencies": {
+        "@types/node": "^22.14.0",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "chalk": "^5.6.2"
+    },
+    "engines": {
+        "node": ">=18"
+    }
+}
