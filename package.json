@@ -1,6 +1,6 @@
 {
     "name": "log-timed",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Lightweight logging with timestamps, colors and file support",
     "keywords": [
         "log",
