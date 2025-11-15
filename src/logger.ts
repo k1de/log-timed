@@ -62,9 +62,9 @@ interface LoggerFunction {
     /** Output log in green and write to file with "success_" prefix */
     successFile: LoggerFunctionMethod
     /** Output log in cyan */
-    event: LoggerFunctionMethod
-    /** Output log in cyan and write to file with "event_" prefix */
-    eventFile: LoggerFunctionMethod
+    info: LoggerFunctionMethod
+    /** Output log in cyan and write to file with "info_" prefix */
+    infoFile: LoggerFunctionMethod
     /** Output log in yellow */
     warn: LoggerFunctionMethod
     /** Output log in yellow and write to file with "warn_" prefix */
@@ -298,8 +298,8 @@ function createLogger(config: LoggerConfig = {}): LoggerFunction {
     fn.success = createMethod({ colorRight: 'green' })
     fn.successFile = createMethod({ colorRight: 'green' }, { file: 'success_' })
 
-    fn.event = createMethod({ colorRight: 'cyan' })
-    fn.eventFile = createMethod({ colorRight: 'cyan' }, { file: 'event_' })
+    fn.info = createMethod({ colorRight: 'cyan' })
+    fn.infoFile = createMethod({ colorRight: 'cyan' }, { file: 'info_' })
 
     fn.warn = createMethod({ colorRight: 'yellow' })
     fn.warnFile = createMethod({ colorRight: 'yellow' }, { file: 'warn_' })

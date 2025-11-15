@@ -181,8 +181,8 @@ function createLogger(config = {}) {
     // Colored methods with automatic file writing
     fn.success = createMethod({ colorRight: 'green' });
     fn.successFile = createMethod({ colorRight: 'green' }, { file: 'success_' });
-    fn.event = createMethod({ colorRight: 'cyan' });
-    fn.eventFile = createMethod({ colorRight: 'cyan' }, { file: 'event_' });
+    fn.info = createMethod({ colorRight: 'cyan' });
+    fn.infoFile = createMethod({ colorRight: 'cyan' }, { file: 'info_' });
     fn.warn = createMethod({ colorRight: 'yellow' });
     fn.warnFile = createMethod({ colorRight: 'yellow' }, { file: 'warn_' });
     fn.debug = createMethod({ colorRight: 'dim' });

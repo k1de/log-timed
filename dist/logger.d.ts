@@ -42,9 +42,9 @@ interface LoggerFunction {
     /** Output log in green and write to file with "success_" prefix */
     successFile: LoggerFunctionMethod;
     /** Output log in cyan */
-    event: LoggerFunctionMethod;
-    /** Output log in cyan and write to file with "event_" prefix */
-    eventFile: LoggerFunctionMethod;
+    info: LoggerFunctionMethod;
+    /** Output log in cyan and write to file with "info_" prefix */
+    infoFile: LoggerFunctionMethod;
     /** Output log in yellow */
     warn: LoggerFunctionMethod;
     /** Output log in yellow and write to file with "warn_" prefix */

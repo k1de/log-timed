@@ -25,7 +25,7 @@ log.log('Multiple args:', { id: 1 }, 'logged in')
 
 // Colored output
 section('Colored methods')
-const methods = ['success', 'event', 'warn', 'error', 'debug']
+const methods = ['success', 'info', 'warn', 'error', 'debug']
 methods.forEach(method => log[method](`${method} example`))
 
 // With file

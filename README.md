@@ -55,23 +55,23 @@ log('Custom logging')
 **Event logging:**
 
 -   `.success()` - success operations (green)
--   `.event()` - events (cyan)
+-   `.info()` - informational messages (cyan)
 -   `.warn()` - warnings (yellow)
 -   `.error()` - errors (red)
 -   `.debug()` - debug info (dimmed)
 
-Each event method has a `*File()` version for writing to file.
+Each event method has a `*File()` version for writing to file with corresponding prefix (e.g., `success_`, `info_`). To write to file without prefix, use `method(data, { file: true })`.
 
 ## Presets
 
 ```typescript
 import { free, simple, casual, full, iso } from 'log-timed'
 
-free('No timestamps')
-simple('With time')
-casual('With milliseconds')
-full('Full date and time')
-iso('ISO format')
+free('No timestamps') // No timestamps
+simple('With time') // [03:00:00] With time
+casual('With milliseconds') // [13:37:42.999] With milliseconds
+full('Full date and time') // [2025.12.31 23:59:59.999] Full date and time
+iso('ISO format') // [2025-10-21T01:21:00.000Z] ISO format
 ```
 
 ## File logging
